@@ -1,0 +1,176 @@
+{
+  "stations" : {
+    "1" : [
+      "Devyatkino",
+      "Civil Prospect",
+      "Academic",
+      "Polytechnic",
+      "Square of Courage",
+      "Lesnaya",
+      "Vyborgskaya",
+      "Lenin Square",
+      "Chernyshevskaya",
+      "Rebellion Square",
+      "Vladimirskaya",
+      "Pushkinskaya",
+      "Institute of Technology",
+      "Baltiyskaya",
+      "Narvskaya",
+      "Kirov Plant",
+      "Avtovo",
+      "Leninsky Prospekt",
+      "Prospect Veterans"
+    ],
+    "2" : [
+      "Parnas",
+      "Prospect Education",
+      "Lakes",
+      "Udelnaya",
+      "Pioneer",
+      "Black River",
+      "Petrograd",
+      "Gorkovskaya",
+      "Nevsky Avenue",
+      "Sennaya Square",
+      "Institute of Technology",
+      "Frunzenskaya",
+      "Moscow Gates",
+      "Electrosila",
+      "Victory Park",
+      "Moscoskaya",
+      "Stellar",
+      "Kupchino"
+    ],
+    "3" : [
+      "Begovaya",
+      "Novokrestovskaya",
+      "Primorskaya",
+      "Vasileostrovskaya",
+      "Gostiny Dvor",
+      "Mayakovskaya",
+      "Alexander Nevsky Square",
+      "Elizarovskaya",
+      "Lomonosovskaya",
+      "Proletarian",
+      "Obukhovo",
+      "Fishing"
+    ],
+    "4" : [
+      "Spasskaya",
+      "Dostoevskaya",
+      "Ligovsky Avenue",
+      "Alexander Nevsky Square",
+      "Novocherkaskaya",
+      "Ladozhskaya",
+      "Prospect Bolsheviks",
+      "Dybenko Street"
+    ],
+    "5" : [
+      "Commandant Avenue",
+      "Old village",
+      "Krestovsky Island",
+      "Chkalovskaya",
+      "Sports",
+      "Admiraltiyskaya",
+      "Sadovaya",
+      "Zvenigorodskaya",
+      "Bypass Canal",
+      "Volkovskaya",
+      "Bucharestskaya",
+      "International"
+    ]
+  },
+  "connections": [
+    [
+      {
+        "line": 2,
+        "station": "Nevsky Avenue"
+      },
+      {
+        "line": 3,
+        "station": "Gostiny Dvor"
+      }
+    ],
+    [
+      {
+        "line": 1,
+        "station": "Rebellion Square"
+      },
+      {
+        "line": 3,
+        "station": "Mayakovskaya"
+      }
+    ],
+    [
+      {
+        "line": 2,
+        "station": "Sennaya Square"
+      },
+      {
+        "line": 4,
+        "station": "Spasskaya"
+      },
+      {
+        "line": 5,
+        "station": "Sadovaya"
+      }
+    ],
+    [
+      {
+        "line": 1,
+        "station": "Vladimirskaya"
+      },
+      {
+        "line": 4,
+        "station": "Dostoevskaya"
+      }
+    ],
+    [
+      {
+        "line": 1,
+        "station": "Pushkinskaya"
+      },
+      {
+        "line": 5,
+        "station":"Zvenigorodskaya"
+      }
+    ],
+    [
+      {
+        "line": 3,
+        "station": "Alexander Nevsky Square"
+      },
+      {
+        "line": 4,
+        "station": "Alexander Nevsky Square"
+      }
+    ]
+  ],
+  "lines" : [
+    {
+      "number" : 1,
+      "name" : "Kirovsko-Vyborgskaya",
+      "color" : "red"
+    },
+    {
+      "number" : 2,
+      "name" : "Moscow-Petrogradskaya",
+      "color" : "blue"
+    },
+    {
+      "number" : 3,
+      "name" : "Nevsky-Vasileostrovskaya",
+      "color" : "green"
+    },
+    {
+      "number" : 4,
+      "name" : "Right Bank",
+      "color" : "orange"
+    },
+    {
+      "number" : 5,
+      "name" : "Frunzensko-Primorskaya",
+      "color" : "violet"
+    }
+  ]
+}

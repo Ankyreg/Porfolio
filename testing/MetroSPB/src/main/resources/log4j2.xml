@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+    <Appenders>
+        <File fileName="logs/metroSpb_searches.log" name="SearchFile">
+                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+                <Filters>
+                    <MarkerFilter marker="INPUT_HISTORY" />
+                </Filters>
+        </File>
+        <File fileName="logs/metroSpb_Exceptions.log" name="Exceptions">
+                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+                <Filters>
+                    <ThresholdFilter onMismatch="NEUTRAL" onMatch="DENY" level="fatal"/>
+                </Filters>
+        </File>
+        <File fileName="logs/metroSpb_Input_errors.log" name="NotFound">
+                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+                <Filters>
+                    <MarkerFilter marker="INVALID_STATIONS" />
+                </Filters>
+        </File>
+        <File fileName="logs/metroSpb_parsing_debug.log" name="Parsing">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Filters>
+                <MarkerFilter marker="PARSING_DEBUG" />
+            </Filters>
+        </File>
+    </Appenders>
+    <loggers>
+        <root level="debug">
+            <appender-ref ref="NotFound"/>
+            <appender-ref ref="SearchFile"/>
+            <appender-ref ref="Exceptions" level="error"/>
+            <appender-ref ref="Parsing"/>
+        </root>
+    </loggers>
+</Configuration>

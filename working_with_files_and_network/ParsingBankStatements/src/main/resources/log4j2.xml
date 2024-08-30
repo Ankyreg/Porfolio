@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <File name="ParsingBankStatements" fileName="logs/parsingBankStatements.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <Console name="UserConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern=" %msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="ParsingBankStatements"/>
+            <AppenderRef ref="UserConsole" level = "INFO"/>
+        </Root>
+    </Loggers>
+</Configuration>
